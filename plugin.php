@@ -62,7 +62,7 @@ class recommendedPages extends Plugin {
 		        continue;
 		    }
 
-			$pg = $this->removeUnnecessaryCharacters($pageKey);
+		    $pg = $this->removeUnnecessaryCharacters($pageKey);
 
 		    similar_text($query, $pg, $percent);
 		    if ($percent > 0) {
