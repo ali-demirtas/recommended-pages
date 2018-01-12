@@ -1,0 +1,8 @@
+{
+	"plugin-data":
+	{
+		"name": "Recommended Pages",
+		"description": "Show recommended pages if available on the sidebar when viewing individual pages."
+	},
+	"amount-of-items": "Amount of items"
+}
