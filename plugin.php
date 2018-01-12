@@ -21,7 +21,8 @@ class recommendedPages extends Plugin {
 	 * @param  string $text [slug]
 	 * @return [string]     [simplified slug]
 	 */
-	protected function removeUnnecessaryCharacters(string $text) {
+	protected function removeUnnecessaryCharacters(string $text)
+	{
 	    $tmp = str_replace(['-', '/'], ' ', $text);
 	    $tmp = explode(' ', $tmp);
 	    $tmp = implode(array_diff($tmp, $this->blacklistWords), ' ');
@@ -33,7 +34,8 @@ class recommendedPages extends Plugin {
 	 * @param  [type] $searchString [Current page slug / search query]
 	 * @return [type] array         [Recommended pages results]
 	 */
-	protected function findRecommendedPages($searchString) {
+	protected function findRecommendedPages(string $searchString)
+	{
 
 		global $dbPages;
 
@@ -53,7 +55,7 @@ class recommendedPages extends Plugin {
 
 		$results = [];
 
-		foreach($pages as $pageKey) {
+		foreach ($pages as $pageKey) {
 
 		    // Skip if the current page is found.
 		    if ($searchString === $pageKey) {
@@ -129,7 +131,7 @@ class recommendedPages extends Plugin {
 
 				// Display results
 				$count = 0;
-				foreach($results as $result) {
+				foreach ($results as $result) {
 					/**
 					 * Allow only no. of pages set in config
 					 */
