@@ -1,0 +1,8 @@
+{
+	"plugin-data":
+	{
+		"name": "Önerilen Sayfalar",
+		"description": "Tek tek sayfaları görüntülerken kenar çubuğunda varsa önerilen sayfaları gösterin."
+	},
+	"amount-of-items": "Öge sayısı"
+}
